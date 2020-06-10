@@ -1,5 +1,6 @@
 package com.weather.myweatherapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -11,8 +12,10 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    EditText editTextZip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        editTextZip = findViewById(R.id.editTextZip);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                openWeatherView(view);
             }
         });
     }
@@ -51,5 +55,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void openWeatherView(View v) {
+        String zCode = editTextZip.getText().toString();
+        Intent intent = new Intent(this, WeatherView.class);
+        intent.putExtra("zip_code", zCode);
+        startActivity(intent);
     }
 }
