@@ -2,12 +2,16 @@
     <string name="app_name">MyWeatherApp</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_weather_view">WeatherView</string>
+    <string name="_0_f">0 °F</string>
+    <string name="description">desc</string>
+    <string name="wind">Wind:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="sunrise">Sunrise:</string>
+    <string name="sunset">Sunset:</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="air_quality">Air Quality</string>
+    <string name="fire_alerts">Fire Alerts</string>
+    <string name="todo">TODO</string>
 </resources>
