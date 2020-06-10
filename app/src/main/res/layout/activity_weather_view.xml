@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeatherView">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp"
+        android:columnCount="2">
+
+        <ImageView
+            android:id="@+id/imViewWeather"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_column="0"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 °F"
+                android:textSize="42sp"/>
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="desc"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textViewWind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wind:"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textViewPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pressure:"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textViewHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Humidity:"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textViewSunrise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunrise:"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textViewSunset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunset:"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textViewRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Recommendation"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btnAirQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Air Quality" />
+
+    <Button
+        android:id="@+id/btnFireAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Fire Alerts" />
+
+</LinearLayout>
