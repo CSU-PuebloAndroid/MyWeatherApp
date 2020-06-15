@@ -69,12 +69,35 @@ public class WeatherView extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        switch(id){
+            case R.id.action_display:
+                showDisplay();
+                return true;
+            case R.id.action_location:
+                showLocation();
+                return true;
+            case R.id.action_about:
+                showAbout();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
 
-        return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void showDisplay(){
+        Intent intent = new Intent(this, SettingsDisplay.class);
+        startActivity(intent);
+    }
+
+    private void showLocation(){
+        Intent intent = new Intent(this, SettingsLocation.class);
+        startActivity(intent);
+    }
+
+    private void showAbout(){
+        Intent intent = new Intent(this, SettingsAbout.class);
+        startActivity(intent);
     }
 
     class Weather extends AsyncTask<String,Void,String>{

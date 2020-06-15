@@ -3,8 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.weather.myweatherapp.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_location"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/action_location"
+        android:onClick=""
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_display"
+        android:orderInCategory="100"
+        android:title="@string/action_display"
+        android:onClick=""
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        android:onClick=""
         app:showAsAction="never" />
 </menu>

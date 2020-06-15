@@ -14,4 +14,20 @@
     <string name="air_quality">Air Quality</string>
     <string name="fire_alerts">Fire Alerts</string>
     <string name="todo">TODO</string>
+
+    <string name="action_location">Location</string>
+    <string name="action_display">Display Settings</string>
+    <string name="action_about">About</string>
+
+    <string name="location_button">Save New Zip</string>
+    <string name="current_zip_label">Current Saved Zip: </string>
+    <string name="new_zip_label">Enter Zip Code: </string>
+    <string name="auto_fill_hints"> ##### </string>
+    <string name="mr_hint">5 digits please</string>
+    <string name="spinner_label">Icon Skin Pack: </string>
+    <string name="switch_label">Dark Mode: </string>
+
+    <string name = "about_part_1">This app was created as an extension of a class and not for any monetary purposes. All icons used within this pack were obtained from vectreezy.com, a source for royalty-free artwork.</string>
+    <string name = "about_part_2">The following API\'s were used: </string>
+    <string name = "about_part_3">This app was programmed by Anea Lucero, Anthony Montoya, Jeff Pfeifer, and Robert Anderson.</string>
 </resources>

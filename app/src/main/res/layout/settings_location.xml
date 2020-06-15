@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="16dp"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    tools:context=".SettingsLocation">
+
+    <TextView
+        android:id="@+id/textEnterZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/new_zip_label" />
+
+    <EditText
+        android:id="@+id/editTextZip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:maxLength="6"
+        android:layout_gravity="fill_horizontal"
+        android:background="#BBDEFB"
+        android:autofillHints="@string/auto_fill_hints"
+        android:hint="@string/mr_hint"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <TextView
+        android:id="@+id/textCurrentZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/current_zip_label" />
+
+    <TextView
+        android:id="@+id/showCurrentZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="fill_horizontal"
+        android:background="#FFE0B2"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="50dp"
+        android:text="@string/location_button"
+        android:onClick="updateZip"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+</GridLayout>

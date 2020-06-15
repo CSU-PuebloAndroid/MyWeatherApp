@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="weather_type">
+        <item>rain</item>
+        <item>thunderstorm</item>
+        <item>snow</item>
+        <item>blizzard</item>
+        <item>cloud</item>
+        <item>partialcloud</item>
+        <item>fog</item>
+        <item>wind</item>
+        <item>highwind</item>
+        <item>clear</item>
+    </string-array>
+
+    <string-array name="dark_icon_pack">
+        <item>AllModeA</item>
+        <item>AllModeB</item>
+        <item>DarkModeA</item>
+        <item>DarkModeB</item>
+        <item>DarkModeC</item>
+    </string-array>
+
+    <string-array name="light_icon_pack">
+        <item>AllModeA</item>
+        <item>AllModeB</item>
+        <item>LightModeA</item>
+        <item>LightModeB</item>
+        <item>LightModeC</item>
+    </string-array>
+
+</resources>
